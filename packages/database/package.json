@@ -1,0 +1,22 @@
+{
+    "name": "database",
+    "main": "./index.ts",
+    "types": "./index.ts",
+    "version": "0.0.0",
+    "exports": {
+        ".": "./src/index.ts"
+    },
+    "scripts": {
+        "db:generate": "prisma generate",
+        "db:push": "prisma db push --skip-generate"
+    },
+    "dependencies": {
+        "@prisma/client": "5.13.0"
+    },
+    "devDependencies": {
+        "@types/node": "^20.12.11",
+        "@repo/eslint-config": "*",
+        "@repo/typescript-config": "*",
+        "prisma": "^5.13.0"
+    }
+}
